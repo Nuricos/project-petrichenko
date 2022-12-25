@@ -10,3 +10,12 @@ function getSum(arr) {
 }
 
 getSum([1,2,3,4,5,6]);
+
+function func(num) {
+
+	let res = String(num).split('');
+
+	return res;
+}
+
+console.log(func(123));
