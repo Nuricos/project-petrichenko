@@ -1,21 +1,23 @@
 "use strict";
 
-function getSum(arr) {
-	let sum = 0;
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-	for(let elem of arr) {
-		sum += elem;
-	}
-	return sum;
-}
 
-getSum([1,2,3,4,5,6]);
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
 
-function func(num) {
 
-	let res = String(num).split('');
+let a = prompt("один из последних просмотренных фильмов?", ""),
+	b = prompt("на сколько вы его оцените?", ""),
+	c = prompt("один из последних просмотренных фильмов?", ""),
+	d = prompt("на сколько вы его оцените?", "");
 
-	return res;
-}
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(func(123));
+console.log(personalMovieDB);
