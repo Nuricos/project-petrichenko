@@ -1,0 +1,24 @@
+
+.hidden {
+	display: none;
+}
+
+.active {
+	background: red;
+}
+
+td {
+	width: 30px;
+	height: 30px;
+	border: 1px solid green;
+}
+
+.color1 {
+	background: red;
+}
+.color2 {
+	background: green;
+}
+.color3 {
+	background: yellow;
+}
