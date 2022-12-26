@@ -1,21 +1,35 @@
 "use strict";
 
-// const fruit = 'ananas banana';
+function getTimeFromMinutes(num) {
+  
+        let time = '';
+        let houre = Math.floor(num / 60);
+        let minut = num % 60;
 
-// console.log(fruit.indexOf('n'));
+    if(typeof(houre) !== 'number' || houre < 0 || !Number.isInteger(houre)) {
+        return "Ошибка, проверьте данные";
+    }
 
-// let logg = 'hello world';
+    switch(houre) {
+        case 0: 
+            time = 'часов';
+            break;
+        case 1:
+            time = 'час';
+            break;
+        case 2:
+        case 3:
+        case 4:
+            time = 'часа'; 
+            break;
+            default:   
+            time = 'часов';         
+    }    
+        return `Это ${houre} ${time} и ${minut} минут`;
+}
+
+console.log(getTimeFromMinutes(50.7));
+
+ 
 
 
-// console.log(logg.slice(1, 5));
-// console.log(logg.substring(1, 5));
-// console.log(logg.substr(1, 5));
-
-
-// let num = 12.3;
-
-// console.log(Math.round(num));
-
-let test = '12.3px';
-
-console.log(parseFloat(test));
