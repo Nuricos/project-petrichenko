@@ -1,21 +1,21 @@
 "use strict";
 
+// const fruit = 'ananas banana';
 
-let result = '';
+// console.log(fruit.indexOf('n'));
+
+// let logg = 'hello world';
 
 
-for(let i = 0; i < 6; i++) {
+// console.log(logg.slice(1, 5));
+// console.log(logg.substring(1, 5));
+// console.log(logg.substr(1, 5));
 
-    for(let k = 0; k < 6 - i; k++) {
-        result += ' ';
-    }
 
-    for(let j = 1; j < i * 2; j++) {
-       result += '*';
-    }
+// let num = 12.3;
 
-    
-    result += '\n';
-}
+// console.log(Math.round(num));
 
-console.log(result);
+let test = '12.3px';
+
+console.log(parseFloat(test));
